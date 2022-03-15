@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "echo 'Question 1' && node question1.js && echo 'Question 2' && node question2.js && echo 'Question 3' && node question3.js"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.7",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "cheerio": "*",
+    "got": "^12.0.1",
+    "url-exist": "^3.0.0"
+  }
+}
